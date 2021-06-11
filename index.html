@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>TP JS Jules Chavent</title>
+</head>
+
+<body class="mb-5">
+
+    <!-- NAVBAR -->
+    <div class="container-fluid position-absolute">
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="collapse position-absolute nav__position w-100" id="navbarToggleExternalContent">
+            <div class="bg-light p-4">
+                <ul class="nav__content">
+                    <li class="mb-2"><a href="#">Louer une voiture</a></li>
+                    <li class="mb-2"><a href="#">Louer un utilitaire</a></li>
+                    <li class="mb-2"><a href="#">Réserver un chauffeur</a></li>
+                    <li class="mb-2"><a href="#">Découvrez nos agences</a></li>
+                    <li class="mb-2"><a href="#">Mon compte</a></li>
+                    <li class="mb-2"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="carousel container-fluid overflow-hidden p-0 text-center">
+        <img class="mySlide " src="./Annexes/background1.jpg" alt="voiture">
+        <img class="mySlide" src="./Annexes/background2.jpg" alt="voiture">
+        <img class="mySlide" src="./Annexes/background3.jpg" alt="voiture">
+    </div>
+
+
+    <!-- BANNER -->
+    <section class="custom__banner text-center text-white p-5 d-flex flex-column justify-content-between">
+
+        <!-- BANNER TITLE -->
+        <div>
+            <h1 class="pt-2">Bienvenue à bord</h1>
+            <p>Location de voiture 24h/24 et 7j/7</p>
+        </div>
+
+        <!-- BANNER FORM -->
+        <form class="d-xl-flex mx-auto row">
+            <div class="custom__form--bg p-2 d-block d-md-flex col-lg-8">
+                <button
+                    class="custom__form--bg--gradient mx-md-2 mb-2 btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Adresse de départ
+                </button>
+                <div class="input-group mx-md-2 mb-2">
+                    <input type="text" class="form-control" placeholder="Début de la location">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar-week-fill"></i></span>
+                </div>
+                <div class="input-group mx-md-2 mb-2">
+                    <input type="text" class="form-control" placeholder="Fin de la location">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar-week-fill"></i></span>
+                </div>
+            </div>
+            <p class="custom__valider container p-3 m-0 col-lg-4 d-flex justify-content-center align-items-center">Valider ma recherche</p>
+        </form>
+    </section>
+
+    <!-- MAIN -->
+    <main class="pt-5 container px-2">
+        <div class=" mb-5 d-flex justify-content-between">
+            <h2 class="pt-2 fs-5">7 résultats</h2>
+            <button class="dropdown-toggle btn custom__form--bg--gradient" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown">Prix croissant</button>
+        </div>
+
+        <!-- VOITURE 1 -->
+        <div class="row align-items-center p-0 mb-5 border-bottom pb-5">
+            <img class="col-8 col-md-5 p-2" src="./Annexes/vehicule1.png" alt="voiture">
+            <div class="col text-end text-md-start p-0 px-md-3">
+                <h2 class="d-none d-md-block fs-4">Peugeot 208</h2>
+                <p class="d-none d-md-block">Diesel, 5 portes, GPS, autoradio, Forfait 1000km (0,5/km supplémentaire)
+                </p>
+                <p class="d-none d-md-block">999 € - Agence de Paris</p>
+                <button class="btn custom__reserver--bg text-white">Réserver et Payer</button>
+            </div>
+        </div>
+
+        <!-- VOITURE 2 -->
+        <div class="row align-items-center p-0 mb-5 pt-3 border-bottom pb-5">
+            <img class="col-8 col-md-5 p-2" src="./Annexes/vehicule2.png" alt="voiture">
+            <div class="col text-end text-md-start p-0 px-md-3">
+                <h2 class="d-none d-md-block fs-4">Ford Focus</h2>
+                <p class="d-none d-md-block">Diesel, 5 portes, GPS, autoradio, Forfait 1000km (0,5/km supplémentaire)
+                </p>
+                <p class="d-none d-md-block">999 € - Agence de Paris</p>
+                <button class="btn custom__reserver--bg text-white">Réserver et Payer</button>
+            </div>
+        </div>
+
+        <!-- VOITURE 3 -->
+        <div class="row align-items-center p-0 mb-5  pt-3 border-bottom pb-5">
+            <img class="col-8 col-md-5 p-2" src="./Annexes/vehicule3.png" alt="voiture">
+            <div class="col text-end text-md-start p-0 px-md-3">
+                <h2 class="d-none d-md-block fs-4">Audi A1</h2>
+                <p class="d-none d-md-block">Diesel, 5 portes, GPS, autoradio, Forfait 1000km (0,5/km supplémentaire)
+                </p>
+                <p class="d-none d-md-block">999 € - Agence de Paris</p>
+                <button class="btn custom__reserver--bg text-white">Réserver et Payer</button>
+            </div>
+        </div>
+
+        <!-- VOITURE 4 -->
+        <div class="row align-items-center p-0 mb-5 pt-3 border-bottom pb-5">
+            <img class="col-8 col-md-5 p-2" src="./Annexes/vehicule4.png" alt="voiture">
+            <div class="col text-end text-md-start p-0 px-md-3">
+                <h2 class="d-none d-md-block fs-4">Opel Moka</h2>
+                <p class="d-none d-md-block">Diesel, 5 portes, GPS, autoradio, Forfait 1000km (0,5/km supplémentaire)
+                </p>
+                <p class="d-none d-md-block">999 € - Agence de Paris</p>
+                <button class="btn custom__reserver--bg text-white">Réserver et Payer</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="d-flex justify-content-center">
+        <div class="row w-60">
+            <div class="col text-center">
+                <img class="custom__imgFooter" src="./Annexes/agence.jpg" alt="agence">
+            </div>
+            <div class="col">
+                <h5 class="fs-6 mb-1">Notre agence de <span class="fw-bold">Paris</span></h5>
+                <h5 class="fs-6 mb-1">300 boulevard de vaugirard, 75015, Paris</h5>
+                <h5 class="fs-6 mb-1">Ouvert 7j/7 de 9h à 13h et de 14h à 20h</h5>
+                <h5 class="fs-6 mb-1">01 49 78 21 33</h5>
+                <h5 class="fs-6 mb-1">contact@vtc.com</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./bootstrap-5.0.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

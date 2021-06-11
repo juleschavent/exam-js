@@ -1,0 +1,57 @@
+/* GENERAL */
+body {
+    overflow-x: hidden;
+    /*scroll horizontal sorti de nul part */
+}
+
+/* NAVBAR */
+.nav__content li {
+    list-style-type: none;
+}
+
+.nav__content li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* SLIDER */
+.carousel {
+    position: absolute;
+    z-index: -1;
+}
+
+.mySlide {
+    max-width: 1500px;
+}
+
+/* BANNER */
+
+.custom__banner {
+    min-height: 500px;
+}
+
+/* FORM */
+
+.custom__form--bg--gradient {
+    background: linear-gradient(rgb(248, 248, 248), rgb(221, 221, 221));
+}
+
+.custom__form--bg {
+    background-color: rgba(180, 180, 180, 0.61);
+}
+
+.custom__valider {
+    background-color: rgba(78, 216, 60, 0.705);
+}
+
+/* MAIN */
+.custom__reserver--bg {
+    background: linear-gradient(rgb(72, 201, 72), rgb(38, 121, 38));
+}
+
+
+/* FOOTER */
+.custom__imgFooter {
+    max-width: 200px;
+}
