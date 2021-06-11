@@ -1,3 +1,5 @@
+Site visible en ligne à l'adresse suivante : https://juleschavent.github.io/exam-js/
+
 Bootstrap a été utilisé pour répondre aux consignes dans un temps minimum.
 
 Avec un peu plus de temps il n'aurait PAS DU TOUT été utilisé et tout aurait été fait en JS.
